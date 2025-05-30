@@ -9,6 +9,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
+    print(request.files)
     if 'image' not in request.files:
         return jsonify({'error': 'No image uploaded'}), 400
 

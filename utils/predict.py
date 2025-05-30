@@ -1,10 +1,11 @@
 import numpy as np
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
-from pesticide_mapping import pesticide_mapping  # ← IMPORT mapping
+from .pesticide_mapping import pesticide_mapping
+  # ← IMPORT mapping
 
 # Load the trained model
-model = load_model('plant_disease_detection.h5')  # Name as per your original model
+model = load_model('model.h5')  # Name as per your original model
 
 # Load the class labels (stored as categories.json when training)
 import json

@@ -7,5 +7,5 @@ pillow
 gunicorn
 
 opencv-python
-
+flask-cors
 scikit-learn
